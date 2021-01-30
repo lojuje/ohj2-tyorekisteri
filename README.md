@@ -1,6 +1,3 @@
-# pohja
-
-Pohja kevään 2020 harjoitustöiden GIT-repoille
-
-Lue käyttöohjeet TIMistä: <https://tim.jyu.fi/view/kurssit/tie/ohj2/tyokalut/git/ohj2git#fork>
-
+# Work Register
+The finished product made for programming 2 course held in University of Jyvaskyla in spring 2020.
+Made in collaberation with Musa [Musa Jallow](http://users.jyu.fi/~mujajall/public_html/cv/#)
