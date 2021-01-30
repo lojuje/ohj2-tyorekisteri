@@ -1,0 +1,5 @@
+Testi asiakirja toimiiko git. -Jussi
+
+Toimiskoha tää nyt
+
+tehdään lisää testejä... Ole hyvä t: musa

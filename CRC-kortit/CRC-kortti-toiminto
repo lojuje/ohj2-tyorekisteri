@@ -1,0 +1,24 @@
+|------------------------------------------------------------------------|
+| Luokan nimi:   toiminto                            | Avustajat:        |
+|-------------------------------------------------------------------------
+| Vastuualueet:                                      |                   | 
+|                                                    |                   | 
+| (- ei tiedä työrekisteristä, eikä                  |                   |
+|   käyttöliittymästä)                               |                   | 
+| - tietää toiminnon kentät                          |                   |	
+|     - id                                           |                   |
+|     - otsikko                                      |                   |
+|     - aihealueet.id                                |                   |
+|     - tapahtumat.id                                |                   |
+| - osaa tarkistaa tietyn kentän oikeellisuuden      |                   |
+|   (syntaksin)                                      |                   | 
+| - osaa muuttaa 1|Ohjelmointi..|..| - merkkijonon   |                   |
+|   tapahtuman tiedoiksi                             |                   | 
+| - osaa antaa merkkijonona i:n kentän tiedot        |                   | 
+| - osaa laittaa merkkijonon i:neksi kentäksi        |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|-------------------------------------------------------------------------

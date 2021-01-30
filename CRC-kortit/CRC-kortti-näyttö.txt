@@ -1,0 +1,19 @@
+|------------------------------------------------------------------------|
+| Luokan nimi:   naytto                              | Avustajat:        |
+|-------------------------------------------------------------------------
+| Vastuualueet:                                      | - tyorekisteri    | 
+|                                                    | - toiminnat       | 
+| - hoitaa kaiken näyttöön tulevan tekstin           | - tapahtumat      | 
+| - hoitaa kaiken tiedon pyytämisen käyttäjältä      | - aihealueet      | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|-------------------------------------------------------------------------

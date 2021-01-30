@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fi.jyu.mit.fxgui.ListChooser?>
+<?import fi.jyu.mit.fxgui.StringGrid?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="paaIkkuna" minHeight="750.0" minWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxRekisteri.RekisteriGUIController">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar minWidth="1200.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Tiedosto">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleTallenna" text="Tallenna">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="avaaNappi" mnemonicParsing="false" onAction="#handleAvaa" text="Avaa">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#handleTulosta" text="Tulosta">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="T" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#handleLopeta" text="Lopeta">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="ESCAPE" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Muokkaa">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleUusiTapahtuma" text="Lisää uusi tapahtuma">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Apua">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleApua" text="Apua">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#handleTietoja" text="Tietoja">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <BorderPane minHeight="200.0" minWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <StringGrid fx:id="kalenteri" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </center>
+         <BorderPane.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <left>
+            <SplitPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <items>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <BorderPane prefHeight="104.0" prefWidth="198.0" BorderPane.alignment="CENTER">
+                           <top>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Päivän valinta" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets top="20.0" />
+                                 </BorderPane.margin>
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                           </top>
+                           <center>
+                              <DatePicker fx:id="paivanValinta" onAction="#aikaOn" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                              </DatePicker>
+                           </center>
+                           <bottom>
+                              <Button fx:id="lisaaTapahtuma" mnemonicParsing="false" onAction="#handleLisaaTapahtuma" prefWidth="200.0" text="Lisää tapahtumia" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </BorderPane.margin>
+                              </Button>
+                           </bottom>
+                        </BorderPane>
+                     </top>
+                     <center>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <top>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tapahtumien hakeminen" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </top>
+                           <center>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <top>
+                                    <TextField fx:id="HakuKentta" onKeyReleased="#teeHaku" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </BorderPane.margin>
+                                    </TextField>
+                                 </top>
+                                 <center>
+                                    <ListChooser fx:id="chooserTapahtumat" onMouseClicked="#valittuTapahtuma" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                       </BorderPane.margin></ListChooser>
+                                 </center>
+                                 <bottom>
+                                    <Button fx:id="muokkaaPainike" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMuokkaa" prefHeight="40.0" prefWidth="200.0" text="Muokkaa" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets bottom="5.0" left="10.0" right="10.0" />
+                                       </BorderPane.margin>
+                                    </Button>
+                                 </bottom>
+                              </BorderPane>
+                           </center>
+                        </BorderPane>
+                     </center>
+                  </BorderPane>
+               </items>
+            </SplitPane>
+         </left>
+         <right>
+            <SplitPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <items>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tiedot" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                     </top>
+                     <center>
+                        <ScrollPane fx:id="panelTapahtuma" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                          </content>
+                        </ScrollPane>
+                     </center>
+                  </BorderPane>
+               </items></SplitPane>
+         </right>
+      </BorderPane>
+   </center>
+</BorderPane>

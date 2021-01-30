@@ -1,0 +1,20 @@
+|------------------------------------------------------------------------|
+| Luokan nimi:  tyorekisteri                         | Avustajat:        |
+|-------------------------------------------------------------------------
+| Vastuualueet:                                      | - toiminnat       | 
+|                                                    | - tapahtumat      | 
+| - huolehtii toiminnot, tapahtumat ja aihealueet    | - aihealueet      | 
+|   - luokkien välisestä yhteisteyöstä ja välittää   | - toiminto        | 
+|   näitä tietoja pyydettäessä                       | - tapahtuma       | 
+|                                                    | - aihealue        | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|                                                    |                   | 
+|-------------------------------------------------------------------------
