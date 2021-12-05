@@ -1,3 +1,3 @@
 # Work Register
 The finished product made for programming 2 course held in University of Jyvaskyla in spring 2020.
-Made in collaberation with Musa [Musa Jallow](http://users.jyu.fi/~mujajall/public_html/cv/#)
+Made in collaberation with [Musa Jallow](linkedin.com/in/jallow-musa-01aa4a80)
